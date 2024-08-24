@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todo3/app_theme.dart';
 
 class DefaultElevatedButton extends StatelessWidget {
-  DefaultElevatedButton({required this.lable,required this.onPressed});
+  DefaultElevatedButton({required this.lable,required this.onPressed, required String text});
 
   String lable;
   VoidCallback onPressed;

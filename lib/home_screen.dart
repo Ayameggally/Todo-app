@@ -27,9 +27,11 @@ class _HomeScreenState extends State<HomeScreen> {
         child: BottomNavigationBar(
           currentIndex: currentTabIndex,
           onTap: (index) {
-            setState(() {
-              currentTabIndex = index;
-            });
+          currentTabIndex = index;
+          setState(() {
+          
+          });
+           
           },
           items: [
             BottomNavigationBarItem(
