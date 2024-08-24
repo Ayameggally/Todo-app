@@ -104,13 +104,13 @@ GlobalKey<FormState>formKey=GlobalKey<FormState>();
         descraption: descraptionController.text,
         date: selectedDate, 
         ),
-      ).timeout(
-        Duration(microseconds:500 ),
-         onTimeout: (){
+      ).then((_){
+       // Duration(microseconds:500 ),
+         //onTimeout: (){
           Navigator.of(context).pop();
           Provider.of<TasksProvider>(context,listen: false).getTaske();
           print('Task Added');
-          },
+          }
       ).catchError((error){
         print('Error');
         print(error);
